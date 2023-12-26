@@ -15,7 +15,7 @@ OR
 `npm run test` to run tests. A few have been added to show how to do it without going overboard in this demo app.
 
 **Build**  
-`npm run build` will build the project to `/dist` folder. It takes 2-4s on my test laptops, not including `npm i`. Dev tools like MSW is stripped.
+`npm run build` will build the project to `/dist` folder. It takes 2-4s on my test laptops, not including `npm ci`. Dev tools like MSW are stripped.
 
 ## Notes
 Based on how the position I am applying for has been described I am choosing to interpret this assignment as targeting laptops and desktops in terms of modes of interaction and screen resolutions. Therefor it is responsive from about 1000px width and stops scaling its main content at about 1600px.
