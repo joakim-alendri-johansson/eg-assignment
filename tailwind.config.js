@@ -1,0 +1,97 @@
+/** @type {import('tailwindcss').Config} */
+import defaultTheme from 'tailwindcss/defaultTheme';
+
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  darkMode: 'class',
+  theme: {
+    extend: {
+      animation: {
+        materialize: 'materialize 0.25s linear forwards',
+        dissolve: 'dissolve 0.5s ease-in forwards',
+      },
+      keyframes: {
+        materialize: {
+          '0%': { transform: 'translateX(1vw)', opacity: 0 },
+          '100%': { transform: 'translateX(0)', opacity: 1 },
+        },
+        dissolve: {
+          '0%': { transform: 'translateX(0)', opacity: 1 },
+          '100%': { transform: 'translateX(2vw)', opacity: 0 },
+        },
+      },
+      fontFamily: {
+        sans: ['AlbertSans', ...defaultTheme.fontFamily.sans],
+        work: ['WorkSans'],
+      },
+      colors: {
+        text: {
+          50: 'rgb(239, 245, 243)',
+          100: 'rgb(224, 235, 231)',
+          200: 'rgb(192, 216, 208)',
+          300: 'rgb(161, 196, 184)',
+          400: 'rgb(130, 176, 161)',
+          500: 'rgb(98, 157, 137)',
+          600: 'rgb(79, 125, 110)',
+          700: 'rgb(59, 94, 82)',
+          800: 'rgb(39, 63, 55)',
+          900: 'rgb(20, 31, 27)',
+          950: 'rgb(10, 16, 14)',
+        },
+        background: {
+          50: 'rgb(240, 244, 243)',
+          100: 'rgb(226, 233, 231)',
+          200: 'rgb(197, 211, 206)',
+          300: 'rgb(168, 189, 182)',
+          400: 'rgb(139, 167, 158)',
+          500: 'rgb(110, 145, 133)',
+          600: 'rgb(88, 116, 107)',
+          700: 'rgb(66, 87, 80)',
+          800: 'rgb(44, 58, 53)',
+          900: 'rgb(22, 29, 27)',
+          950: 'rgb(11, 15, 13)',
+        },
+        primary: {
+          50: 'rgb(239, 245, 242)',
+          100: 'rgb(224, 235, 230)',
+          200: 'rgb(193, 215, 204)',
+          300: 'rgb(162, 195, 179)',
+          400: 'rgb(131, 175, 154)',
+          500: 'rgb(99, 156, 128)',
+          600: 'rgb(80, 124, 103)',
+          700: 'rgb(60, 93, 77)',
+          800: 'rgb(40, 62, 51)',
+          900: 'rgb(20, 31, 26)',
+          950: 'rgb(10, 16, 13)',
+        },
+        secondary: {
+          50: 'rgb(240, 243, 245)',
+          100: 'rgb(224, 231, 235)',
+          200: 'rgb(193, 208, 215)',
+          300: 'rgb(162, 184, 195)',
+          400: 'rgb(132, 161, 174)',
+          500: 'rgb(101, 137, 154)',
+          600: 'rgb(81, 110, 123)',
+          700: 'rgb(60, 82, 93)',
+          800: 'rgb(40, 55, 62)',
+          900: 'rgb(20, 27, 31)',
+          950: 'rgb(10, 14, 15)',
+        },
+        accent: {
+          50: 'rgb(239, 242, 245)',
+          100: 'rgb(224, 228, 235)',
+          200: 'rgb(193, 201, 215)',
+          300: 'rgb(162, 174, 195)',
+          400: 'rgb(131, 147, 175)',
+          500: 'rgb(99, 120, 156)',
+          600: 'rgb(80, 96, 124)',
+          700: 'rgb(60, 72, 93)',
+          800: 'rgb(40, 48, 62)',
+          900: 'rgb(20, 24, 31)',
+          950: 'rgb(10, 12, 16)',
+        },
+      },
+    },
+  },
+  plugins: [],
+};
